@@ -90,7 +90,7 @@
 }
 
 .paragraph-border-top {
-    max-width: 600px;
+    max-width: 700px;
     text-align: center;
     color: var(--color1);
     padding: 35px;
@@ -103,7 +103,7 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 72vh;
+    min-height: 36vh;
 }
 
 .glassmorphism {
@@ -118,6 +118,24 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.flex-div {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-section {
+    font-size: 13px;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
 /*-=-=-=-=- NAVBAR-=-=-=-=-*/
 
@@ -269,10 +287,6 @@ main {
     transform: scale(0.95);
 }
 
-.content section {
-    min-height: 52vh !important;
-}
-
 .image-section {
     max-width: 375px;
     max-height: 375px;
@@ -346,6 +360,14 @@ footer p {
     height: 20vh;
     width: 100%;
 }
+
+/*-=-=-=-=- SECTIONS -=-=-=-=-*/
+
+.main-section {
+    width: 100%;
+    min-height: 50vh;
+}
+
 
 /*-=-=-=-=- RESPONSIVIDADE -=-=-=-=-*/
 

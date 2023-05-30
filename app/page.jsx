@@ -4,7 +4,7 @@ export default function Home() {
 
       <section className="home">
         <h1 className="title">Bem-Vindo ao Mental Help</h1>
-        <p className="subtitle">Nós iremos ajudar você a encontrar os maneiras de melhorar sua Mental Help</p>
+        <p className="subtitle">Nós iremos ajudamos você a conciliar sua saúde mental com a tecnologia de uma maneira eficiente.</p>
         <div>
           <button className="cta">
             <span>Bora Lá</span>
@@ -25,12 +25,12 @@ export default function Home() {
         <section className="bg-main">
           <div>
             <p className="paragraph-border-top">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae beatae a laudantium iure quidem ex nemo magni commodi sapiente error sint, explicabo odit, tempora dignissimos alias id sunt consequatur aliquid.
+            Nos dias atuais, a interseção entre tecnologia e saúde mental tem sido um tema de grande relevância. Com o avanço tecnológico, surgiram novas oportunidades e desafios relacionados à saúde mental. Por um lado, a tecnologia tem desempenhado um papel fundamental no acesso à informação, fornecendo recursos valiosos para o autocuidado e a busca por apoio psicológico. Plataformas online e dispositivos vestíveis têm facilitado os a indivíduos monitorem sua saúde mental e adotem práticas de bem-estar.
             </p>
           </div>
           <div>
             <button className="purple_btn">
-              Ver mais sobre Saúde Mental
+              Quero saber mais
             </button>
           </div>
         </section>
