@@ -19,12 +19,13 @@
     --color5: #1a466e;
     --color6: #a990e5;
     --color7: #bd65aa;
+    --color8: #2b1f58;
 }
 
 /*-=-=-=-=- REUTILIZÁVEL-=-=-=-=-*/
-
 .bg {
-    background: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?cs=srgb&dl=pexels-veeterzy-114979.jpg&fm=jpg);
+    /*background: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?cs=srgb&dl=pexels-veeterzy-114979.jpg&fm=jpg);*/
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20210929/pngtree-glassmorphism-wave-effect-abstract-background-image_908575.png);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -89,13 +90,16 @@
     background: var(--color2);
 }
 
-.paragraph-border-top {
+.paragraph {
     max-width: 700px;
     text-align: center;
     color: var(--color1);
     padding: 35px;
-    border-top: 1.75px solid var(--color1);
     margin: 35px 0px 35px 0px;
+}
+
+.border-top {
+    border-top: 1.75px solid var(--color1);
 }
 
 section {
@@ -103,7 +107,7 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 36vh;
+    min-height: 62vh;
 }
 
 .glassmorphism {
@@ -119,22 +123,78 @@ section {
 }
 
 .flex-div {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     align-items: center;
     justify-content: center;
 }
 
+.smImg,
+.mdImg,
+.bgImg,
 .card-section {
+    cursor: grab;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.smImg:hover,
+.mdImg:hover,
+.bgImg:hover,
+.card-section:hover {
+    transform: scale(1.05);
+}
+
+
+.flex-div .smImg {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.flex-div .mdImg {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.flex-div .bgImg {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.card-section {
+    color: white;
+    text-align: center;
     font-size: 13px;
     max-width: 500px;
-    padding: 25px;
+    padding: 35px 50px 35px 50px;
     border-radius: 10px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13px );
-    -webkit-backdrop-filter: blur( 13px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-shadow: 0.1em 0.1em 0.2em #333;
+}
+
+.card-section .title {
+    color: white;
+    font-size: 17.5px;
+    margin-bottom: 25px;
+}
+
+.margin-left {
+    margin-left: 50px;
+}
+
+.margin-right {
+    margin-right: 50px;
+}
+
+.low-width {
+    max-width: 400px !important;
 }
 
 /*-=-=-=-=- NAVBAR-=-=-=-=-*/
@@ -351,11 +411,11 @@ footer {
 }
 
 .custom-shape-divider-bottom-1684886182 .shape-fill {
-    fill: #786ba8;
+    fill: #dd95ff;
 }
 
 footer p {
-    background: #786ba8;
+    background: linear-gradient(-180deg, #dd95ff, #ab64cc, #8c39b3);
     color: white;
     height: 20vh;
     width: 100%;
@@ -364,10 +424,49 @@ footer p {
 /*-=-=-=-=- SECTIONS -=-=-=-=-*/
 
 .main-section {
+    margin-top: 2.2em;
     width: 100%;
-    min-height: 50vh;
+    min-height: 32vh;
 }
 
+.welcome-background-div {
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    border-radius: 70% 30% 30% 70% / 63% 70% 30% 37%;
+}
+
+.paragraph-welcome {
+    font-weight: normal;
+    text-align: center;
+    max-width: 1050px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em #3333335e;
+}
+
+.btn-section {
+    margin-top: 2.1em;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.blue:hover {
+    background: #3f2f7a;
+}
+
+.blue {
+    background: var(--color8);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+}
 
 /*-=-=-=-=- RESPONSIVIDADE -=-=-=-=-*/
 
@@ -379,5 +478,29 @@ footer p {
     .glassmorphism {
         padding: 15px;
     }
-    
+
+
+    .flex-div .smImg {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .flex-div .mdImg {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .flex-div .bgImg {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .margin-left {
+        margin-left: 0px;
+    }
+
+    .margin-right {
+        margin-right: 0px;
+    }
+
 }

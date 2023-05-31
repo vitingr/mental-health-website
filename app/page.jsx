@@ -24,8 +24,8 @@ export default function Home() {
         </div>
         <section className="bg-main">
           <div>
-            <p className="paragraph-border-top">
-            Nos dias atuais, a interseção entre tecnologia e saúde mental tem sido um tema de grande relevância. Com o avanço tecnológico, surgiram novas oportunidades e desafios relacionados à saúde mental. Por um lado, a tecnologia tem desempenhado um papel fundamental no acesso à informação, fornecendo recursos valiosos para o autocuidado e a busca por apoio psicológico. Plataformas online e dispositivos vestíveis têm facilitado os a indivíduos monitorem sua saúde mental e adotem práticas de bem-estar.
+            <p className="paragraph border-top">
+              Nos dias atuais, a interseção entre tecnologia e saúde mental tem sido um tema de grande relevância. Com o avanço tecnológico, surgiram novas oportunidades e desafios relacionados à saúde mental. Por um lado, a tecnologia tem desempenhado um papel fundamental no acesso à informação, fornecendo recursos valiosos para o autocuidado e a busca por apoio psicológico. Plataformas online e dispositivos vestíveis têm facilitado os a indivíduos monitorem sua saúde mental e adotem práticas de bem-estar.
             </p>
           </div>
           <div>
@@ -36,8 +36,16 @@ export default function Home() {
         </section>
 
         <section className="bg-main">
-          <div>
-            <img src="https://www.asianmhc.org/wp-content/uploads/2021/07/amhc_illustration.png" className="image-section"/>
+          <div className='flex-div'>
+
+            <div>
+              <p className="paragraph low-width">
+                Há uma relação entre o uso excessivo das redes sociais, jogos muito violentos e séries com o surgimento de sintomas de ansiedade patológica, depressão e privação do sono. Na fase da juventude, o uso excessivo da tecnologia afeta o desenvolvimento e faz perder outras experiências sociais importantes.
+              </p>
+            </div>
+            <div>
+              <img src="https://www.asianmhc.org/wp-content/uploads/2021/07/amhc_illustration.png" className="image-section" />
+            </div>
           </div>
         </section>
       </div>
