@@ -2,10 +2,10 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className='glassmorphism'>
       <section className='main-section'>
 
-          <p>help</p>
+          
 
       </section>
     </div>
