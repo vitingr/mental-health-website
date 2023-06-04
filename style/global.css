@@ -25,7 +25,8 @@
 /*-=-=-=-=- REUTILIZÁVEL-=-=-=-=-*/
 .bg {
     /*background: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?cs=srgb&dl=pexels-veeterzy-114979.jpg&fm=jpg);*/
-    background: url(https://png.pngtree.com/thumb_back/fh260/background/20210929/pngtree-glassmorphism-wave-effect-abstract-background-image_908575.png);
+    /*background: url(https://png.pngtree.com/thumb_back/fh260/background/20210929/pngtree-glassmorphism-wave-effect-abstract-background-image_908575.png); */
+    background: url(/assets/images/bg3.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -34,6 +35,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .title {
@@ -195,6 +197,13 @@ section {
 
 .low-width {
     max-width: 400px !important;
+}
+
+li {
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    list-style: none;
 }
 
 /*-=-=-=-=- NAVBAR-=-=-=-=-*/
@@ -411,11 +420,11 @@ footer {
 }
 
 .custom-shape-divider-bottom-1684886182 .shape-fill {
-    fill: #dd95ff;
+    fill: #807ab7;
 }
 
 footer p {
-    background: linear-gradient(-180deg, #dd95ff, #ab64cc, #8c39b3);
+    background: #807ab7;
     color: white;
     height: 20vh;
     width: 100%;
@@ -426,7 +435,7 @@ footer p {
 .main-section {
     margin-top: 2.2em;
     width: 100%;
-    min-height: 32vh;
+    min-height: 72vh;
 }
 
 .welcome-background-div {
@@ -436,6 +445,7 @@ footer p {
         25px 30px 30px rgba(0, 0, 0, 0.05),
         inset -20px -20px 25px rgba(255, 255, 255, 0.9);
     border-radius: 70% 30% 30% 70% / 63% 70% 30% 37%;
+    margin-bottom: 6.5em;
 }
 
 .paragraph-welcome {
@@ -467,6 +477,83 @@ footer p {
     transition-timing-function: ease-in-out;
     transition-duration: 0.25s;
 }
+
+/*-=-=-=-=- QUESTIONÁRIO -=-=-=-=-*/
+
+.questions-container {
+    margin-top: -75px;
+}
+
+.questions-container h1 {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.questions-container h4,
+.questions-container h4 span {
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14.5px;
+    text-align: center;
+}
+
+.quiz-container {
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 18.5px;
+}
+
+.quiz-container h3 {
+    color: white;
+    font-weight: normal;
+}
+
+.li-selected {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 10px;
+    background: #afa9ff;
+    border: 1px solid #33333340;
+}
+
+.li-hover {
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.877);
+    border: 1px solid #33333340;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.li-hover:hover {
+    transform: scale(1.025);
+    color: white;
+    background: #afa9ff;
+}
+
+.quiz-button,
+.quiz-button-disabled {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 4em;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.quiz-button {
+    cursor: pointer;
+    color: white;
+    background: #ce6efa;
+}
+
+
 
 /*-=-=-=-=- RESPONSIVIDADE -=-=-=-=-*/
 
