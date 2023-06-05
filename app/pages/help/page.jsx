@@ -7,7 +7,6 @@ const page = () => {
 
   const [points, setPoints] = useState(0)
   const [activeQuestion, setActiveQuestion] = useState(0)
-  const [selectedAnswer, setSelectedAnswer] = useState("")
   const [checked, setChecked] = useState(false)
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null)
   const [showResult, setShowResult] = useState(false)
@@ -16,7 +15,7 @@ const page = () => {
   const { questions } = quiz
   const { question, answers } = questions[activeQuestion]
 
-  const onAnswerSelected = (answer, index) => {
+  const onAnswerSelected = (index) => {
     setChecked(true)
     setSelectedAnswerIndex(index)
 
@@ -141,7 +140,7 @@ const page = () => {
               )}
             </div>
           </div>
-        </div> 
+        </div>
       </section>
     </div>
   )
