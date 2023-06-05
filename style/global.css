@@ -11,7 +11,8 @@
 }
 
 :root {
-    --font-color: #1c2a38;
+    /*--font-color: #1c2a38; */ 
+    --font-color: white;
     --color1: #6553a5;
     --color2: #925fa1;
     --color3: #c8457b;
@@ -41,7 +42,6 @@
 .title {
     text-align: center;
     font-size: 47.5px;
-    color: white;
     font-weight: 700;
     text-transform: capitalize;
     line-height: 1.1;
@@ -50,7 +50,6 @@
 
 .subtitle {
     text-align: center;
-    color: white;
     font-weight: 200;
     font-style: italic;
     line-height: 1.1;
@@ -62,7 +61,6 @@
     margin-top: 50px;
     min-width: 125px;
     cursor: pointer;
-    color: white;
     background: none;
     padding: 5px;
     border: 1px solid white;
@@ -79,7 +77,6 @@
 .purple_btn {
     min-width: 295px;
     cursor: pointer;
-    color: white;
     background: var(--color1);
     padding: 5px;
     font-weight: 300;
@@ -167,7 +164,6 @@ section {
 }
 
 .card-section {
-    color: white;
     text-align: center;
     font-size: 13px;
     max-width: 500px;
@@ -182,7 +178,6 @@ section {
 }
 
 .card-section .title {
-    color: white;
     font-size: 17.5px;
     margin-bottom: 25px;
 }
@@ -235,7 +230,6 @@ nav {
     text-decoration: none;
     cursor: pointer;
     letter-spacing: 1px;
-    color: white;
     list-style: none;
 }
 
@@ -381,6 +375,11 @@ main {
     cursor: pointer;
 }
 
+.profile div h1,
+.profile div p {
+    color: #1c2a38;
+}
+
 .profile img {
     width: 75px;
     height: 75px;
@@ -425,7 +424,6 @@ footer {
 
 footer p {
     background: #807ab7;
-    color: white;
     height: 20vh;
     width: 100%;
 }
@@ -454,7 +452,6 @@ footer p {
     max-width: 1050px;
     padding: 25px;
     text-align: center;
-    color: white;
     text-shadow: 0.1em 0.1em 0.2em #3333335e;
 }
 
@@ -464,7 +461,6 @@ footer p {
     max-width: 300px;
     border-radius: 10px;
     padding: 10px 5px 10px 5px;
-    color: white;
     cursor: pointer;
 }
 
@@ -485,14 +481,12 @@ footer p {
 }
 
 .questions-container h1 {
-    font-size: 25px;
+    font-size: 32.5px;
     text-align: center;
-    color: white;
 }
 
 .questions-container h4,
 .questions-container h4 span {
-    color: white;
     font-weight: normal;
     font-style: italic;
     font-size: 14.5px;
@@ -507,12 +501,10 @@ footer p {
 }
 
 .quiz-container h3 {
-    color: white;
     font-weight: normal;
 }
 
 .li-selected {
-    color: white;
     font-size: 14px;
     font-weight: normal;
     border-radius: 5px;
@@ -522,6 +514,7 @@ footer p {
 }
 
 .li-hover {
+    color: #1c2a38;
     font-size: 14px;
     font-weight: normal;
     border-radius: 5px;
@@ -533,8 +526,8 @@ footer p {
 }
 
 .li-hover:hover {
-    transform: scale(1.025);
     color: white;
+    transform: scale(1.025);
     background: #afa9ff;
 }
 
@@ -549,11 +542,23 @@ footer p {
 
 .quiz-button {
     cursor: pointer;
-    color: white;
     background: #ce6efa;
 }
 
+.result-message {
+    margin-top: 50px;
+}
 
+.result-message h3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.result-message p {
+    font-size: 14px;
+    text-align: center;
+}
 
 /*-=-=-=-=- RESPONSIVIDADE -=-=-=-=-*/
 

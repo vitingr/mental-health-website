@@ -96,7 +96,6 @@ const page = () => {
                 ) : (
                   <div></div>
                 )}
-
               </h4>
             </div>
             <div>
@@ -142,11 +141,7 @@ const page = () => {
               )}
             </div>
           </div>
-        </div>
-
-
-
-
+        </div> 
       </section>
     </div>
   )
