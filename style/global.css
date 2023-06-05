@@ -568,7 +568,7 @@ footer p {
     }
 
     .glassmorphism {
-        padding: 15px;
+        padding: 100px 15px 75px 15px;
     }
 
 
@@ -593,6 +593,10 @@ footer p {
 
     .margin-right {
         margin-right: 0px;
+    }
+
+    .main-section {
+        padding: 5px;
     }
 
 }
