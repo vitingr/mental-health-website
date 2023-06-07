@@ -15,12 +15,11 @@ const page = () => {
   const { questions } = quiz
   const { question, answers } = questions[activeQuestion]
 
-  const onAnswerSelected = (index) => {
+  const onAnswerSelected = ( answer, index ) => {
     setChecked(true)
     setSelectedAnswerIndex(index)
 
     // Calculo de Pontos
-
     if (index === 0) {
       setPoints(points + 20)
     }
@@ -39,7 +38,6 @@ const page = () => {
   }
 
   // Proxima Questão
-
   const nextQuestion = () => {
 
     setSelectedAnswerIndex(null)
