@@ -52,7 +52,7 @@ const handler = NextAuth({
         }
     }
 
-    // Sempre que utilizamos ne xt, utilizamos um provider, com ele, os callbacks 
+    // Sempre que utilizamos next, utilizamos um provider, com ele, os callbacks 
     // Session é os cookies, como req.user
 
 })
