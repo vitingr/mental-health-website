@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Home() {
   return (
     <main>
@@ -29,9 +31,11 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <button className="purple_btn">
-              Quero saber mais
-            </button>
+            <Link href="/pages/technology">
+              <button className="purple_btn">
+                Quero saber mais
+              </button>
+            </Link>
           </div>
         </section>
 

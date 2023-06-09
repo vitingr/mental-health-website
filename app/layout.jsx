@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
           {children}
 
           <Footer />
-          <script src="../functions/reveal.js" defer></script>
-          <script src="../functions/revealConfig.js" defer></script>
         </Provider>
+        <script src="../functions/reveal.js" defer></script>
+        <script src="../functions/revealConfig.js" defer></script>
       </body>
     </html>
   )

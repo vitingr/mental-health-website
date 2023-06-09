@@ -266,6 +266,8 @@ nav {
 .nav-actions {
     margin-left: 5%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -385,6 +387,17 @@ main {
 
 .content {
     margin-bottom: -225px;
+}
+
+.rounded-profile-photo {
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    border-radius: 50%;
+}
+
+.rounded-profile-photo:hover {
+    transform: scale(1.1);
 }
 
 /*-=-=-=-=- CONTATOS -=-=-=-=-*/

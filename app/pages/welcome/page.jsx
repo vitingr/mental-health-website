@@ -31,10 +31,10 @@ const page = () => {
           </p>
 
           <div className='flex-div'>
-            <button class="btn-section blue">
+            <button className="btn-section blue">
               Ver Artigos
             </button>
-            <button class="btn-section blue">
+            <button className="btn-section blue">
               Mais Informações
             </button>
           </div>

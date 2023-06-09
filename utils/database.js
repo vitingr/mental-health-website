@@ -1,28 +1,26 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
-let isConnected = false
+let isConnected = false; 
 
-export const ConnectToDB = async () => {
-    mongoose.set('strictQuery', true)
+export const connectToDB = async () => {
+  mongoose.set('strictQuery', true);
 
-    if (isConnected) {
-        console.log("MongoDB já está conectado")
-        return
-    }
+  if(isConnected) {
+    console.log('MongoDB já está conectado!');
+    return;
+  }
 
-    try {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI, {
+      dbName: "pwi",
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
 
-        await mongoose.connect(process.env.MONGODB_URI, {
-            dbName: 'pwi',
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        })
+    isConnected = true;
+    console.log('Conexão com o MongoDB realizada com sucesso!')
 
-        isConnected = true
-
-        console.log("Conexão com o MongoDB realizada com sucesso!")
-
-    } catch (error) {
-        return error
-    }
+  } catch (error) {
+    console.log(error);
+  }
 }
