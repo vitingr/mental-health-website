@@ -92,7 +92,7 @@
 .paragraph {
     max-width: 700px;
     text-align: center;
-    color: var(--color1);
+    color: #1c2a38;
     padding: 35px;
     margin: 35px 0px 35px 0px;
 }
@@ -106,7 +106,7 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 62vh;
+    min-height: 500px;
 }
 
 .glassmorphism {
@@ -114,7 +114,7 @@ section {
     padding: 100px 100px 50px 100px;
     max-width: 850px;
     background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.301);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
@@ -272,6 +272,7 @@ nav {
 }
 
 .sign-in-out {
+    background: var(--color3);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -280,14 +281,13 @@ nav {
     width: 125px;
     border-radius: 25px;
     border: 1px solid #ffffff8a;
-    background: transparent;
     cursor: pointer;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.1s;
+    transition-duration: 0.3s;
 }
 
 .sign-in-out:hover {
-    background: #1c2a38;
+    background: var(--color1);
 }
 
 /*-=-=-=-=- MENU PRINCIPAL -=-=-=-=-*/
@@ -301,7 +301,7 @@ main {
     overflow: hidden;
     line-height: 0;
 }
-
+   
 .custom-shape-divider-bottom-1684278806 svg {
     position: relative;
     display: block;
@@ -310,7 +310,7 @@ main {
 }
 
 .custom-shape-divider-bottom-1684278806 .shape-fill {
-    fill: var(--color4);
+    fill: white;
 }
 
 .home {
@@ -318,7 +318,7 @@ main {
 }
 
 .bg-main {
-    background: var(--color4);
+    background: white;
 }
 
 .cta {
@@ -601,6 +601,87 @@ footer p {
     text-align: center;
 }
 
+/*-=-=-=-=- FORMULÁRIOS -=-=-=-=-*/
+
+.form-container {
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid #7e7e7e5e;
+    background: rgba(255, 255, 255, 0.952);
+    margin-top: 8.5em;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-form {
+    margin-bottom: 2.2em;
+}
+
+.top-form h1 {
+    font-size: 27.5px;
+    color: var(--color3);
+}
+
+.top-form p {
+    font-size: 13px;
+    color: #333333a9;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-textarea {
+    color: #1c2a38;
+    border: 1px solid #3333331e;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    background: #f9f9f9;
+    width: 100%;
+    outline: 0;
+    resize: none;
+    min-height: 300px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3.5em;
+}
+
+.cancel-form {
+    font-size: 14px;
+    text-decoration: none;
+    color: #333333a9;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.cancel-form:hover {
+    color: #333;
+}
+
+.send-form {
+    background: var(--color3);
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    width: 100px;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.send-form:hover {
+    background: var(--color1);
+}
+
+
 /*-=-=-=-=- RESPONSIVIDADE -=-=-=-=-*/
 
 @media (max-width: 750px) {
@@ -624,8 +705,8 @@ footer p {
     }
 
     .flex-div .bgImg {
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 350px;
+        max-height: 350px;
     }
 
     .margin-left {
@@ -638,6 +719,14 @@ footer p {
 
     .main-section {
         padding: 5px;
+    }
+
+    .card-section {
+        max-width: 375px;
+    }
+
+    .nav-actions {
+        margin-left: 0;
     }
 
 }

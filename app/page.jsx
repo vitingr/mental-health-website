@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Feed from "@components/Feed"
 
 export default function Home() {
   return (
@@ -50,6 +51,12 @@ export default function Home() {
             <div>
               <img src="https://www.asianmhc.org/wp-content/uploads/2021/07/amhc_illustration.png" className="image-section" />
             </div>
+          </div>
+        </section>
+
+        <section className="bg-main">
+          <div className="flex-div">
+            <Feed />
           </div>
         </section>
       </div>
