@@ -13,28 +13,14 @@ const ListPosts = ({ data }) => {
 	)
 }
 
-const Feed = () => {
-
-	const [posts, setPosts] = useState([])
-
-	const fetchPosts = async () => {
-		const response = await fetch("/api/posts")
-		const data = await response.json()
-
-		setPosts(data)
-	}
-
-	useEffect(() => {
-		fetchPosts()
-	}, [])
-
+const Feed = ({ postsData }) => {
 
 	return (
 		<div className='feed'>
 			<h1>
 				Veja algumas Postagens recentes
 			</h1>
-			<ListPosts data={posts} />
+			<ListPosts data={postsData} />
 		</div>
 	)
 }
