@@ -18,13 +18,17 @@ const Feed = () => {
 	const [posts, setPosts] = useState([])
 
 	const fetchPosts = async () => {
+		console.log("A")
 		const response = await fetch("/api/posts")
+		console.log("A")
 		const data = await response.json()
 
+		console.log("A")
 		setPosts(data)
 	}
 
 	useEffect(() => {
+		console.log("A")
 		fetchPosts()
 	}, [])
 
