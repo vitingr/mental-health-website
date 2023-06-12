@@ -1,50 +1,53 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useSession } from "next-auth/react"
-import { useRouter } from "next/navigation"
+import { useState } from "react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
-import Form from "@components/Form"
+import Form from "@components/Form";
 
-const page = () => {
+const CreatePost = () => {
+  const router = useRouter();
+  const { data: session } = useSession();
 
-	const router = useRouter()
-	const { data: session } = useSession()
+  const [submitting, setSubmitting] = useState(false);
+  const [post, setPost] = useState({ text: "" });
 
-	const [submitting, setSubmitting] = useState(false)
-	const [post, setPost] = useState({ post: "" })
+  const createPost = async (e) => {
 
-	// Funçao Criar Post
+    e.preventDefault();
+    setSubmitting(true);
 
-	const createPost = async (e) => {
-		e.preventDefault()
-		setSubmitting(true)
+    try {
+      const response = await fetch("/api/posts/new", {
+        method: "POST",
+        body: JSON.stringify({
+          userId: session?.user.id,
+          text: post.text
+        }),
+      }); // Aqui vai realizar o POST
 
-		try {
-			const response = await fetch("/api/posts/new", {
-				method: "POST",
-				body: JSON.stringify({
-					text: post.text,
-					userId: session?.user.id,
-				})
-			})
+      console.log(response)
+      if (response.ok) {
+        router.push("/");
+      }
 
-			if (response.ok) {
-				router.push("/")
-			}
-			
-		} catch (erro) {
-			console.log(erro)
-		} finally {
-			setSubmitting(false)
-		}
-	}
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
-	return (
-		<div>
-			<Form type="Postar" post={post} setPost={setPost} submitting={submitting} handleSubmit={createPost} />
-		</div>
-	)
-}
+  return (
+    <Form 
+      type='Criar'
+      post={post}
+      setPost={setPost}
+      submitting={submitting}
+      handleSubmit={createPost}
+    />
+  );
+};
 
-export default page
+export default CreatePost;

@@ -14,7 +14,7 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
       </div>
       <form onSubmit={handleSubmit} className='form'>
         <label>
-          <textarea name="form" id="form" value={post.text} onChange={(e) => setPost({ ...post, text: e.target.value})} placeholder='Escreva uma mensagem' className='form-textarea' required></textarea>
+          <textarea name="text" id="text" value={post.text} onChange={(e) => setPost({ ...post, text: e.target.value})} placeholder='Escreva uma mensagem' className='form-textarea' required></textarea>
         </label>
 
         <div className='form-actions'>

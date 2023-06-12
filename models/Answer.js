@@ -1,9 +1,13 @@
 import { Schema, model, models } from 'mongoose';
 
-const PostSchema = new Schema({
+const AnswerSchema = new Schema({
   creator: {
     type: Schema.Types.ObjectId,
     ref: 'User',
+  },
+  question: {
+    type: Schema.Types.ObjectId,
+    ref: 'Post',
   },
   text: {
     type: String,
@@ -11,5 +15,5 @@ const PostSchema = new Schema({
   }
 });
 
-const Post = models.Post || model('Post', PostSchema);
-export default Post;
+const Answer = models.Answer || model('Answer', AnswerSchema);
+export default Answer;

@@ -40,29 +40,30 @@ const page = () => {
   // Proxima Questão
   const nextQuestion = () => {
 
+    console.log(points)
     setSelectedAnswerIndex(null)
 
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1)
     } else {
 
-      if (points > 200 <= 250) {
+      if (points >= 200 && points <= 250) {
         setResult("Opcao 1")
       }
 
-      if (points > 250 <= 350) {
+      if (points > 250 && points <= 350) {
         setResult("Opcao 2")
       }
 
-      if (points > 350 <= 500) {
+      if (points > 350 && points <= 500) {
         setResult("Opcao 3")
       }
 
-      if (points > 500 <= 750) {
+      if (points > 500 && points <= 750) {
         setResult("Opcao 4")
       }
 
-      if (points > 750 <= 1000) {
+      if (points > 750 && points <= 1000) {
         setResult("Opcao 5")
       }
 

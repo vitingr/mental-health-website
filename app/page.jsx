@@ -9,13 +9,15 @@ export default function Home() {
         <h1 className="title">Bem-Vindo ao Mental Help</h1>
         <p className="subtitle">Nós iremos ajudamos você a conciliar sua saúde mental com a tecnologia de uma maneira eficiente.</p>
         <div>
-          <button className="cta">
-            <span>Bora Lá</span>
-            <svg viewBox="0 0 13 10" height="10px" width="15px">
-              <path d="M1,5 L11,5"></path>
-              <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-          </button>
+          <Link href="/pages/help">
+            <button className="cta">
+              <span>Bora Lá</span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+          </Link>
         </div>
       </section>
 

@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="nav-actions">
             {session?.user ? (
               <div className="nav-actions">
-                <Link href="/" className="sign-in-out">
+                <Link href="/pages/create-post" className="sign-in-out">
                   Publicar
                 </Link>
 

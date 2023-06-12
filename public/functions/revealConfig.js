@@ -21,3 +21,5 @@ ScrollReveal().reveal('.card2-health', { delay: 150, origin: 'bottom', interval:
 
 ScrollReveal().reveal('.card1-technology', { delay: 100, origin: 'left', interval: 100 });
 ScrollReveal().reveal('.card2-technology', { delay: 150, origin: 'bottom', interval: 100 });
+
+ScrollReveal().reveal('.glassmorphism', { delay: 150, origin: 'right', interval: 100 });

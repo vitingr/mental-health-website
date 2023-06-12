@@ -30,6 +30,9 @@ const Feed = () => {
 
 	return (
 		<div className='feed'>
+			<h1>
+				Veja algumas Postagens recentes
+			</h1>
 			<ListPosts data={posts} />
 		</div>
 	)

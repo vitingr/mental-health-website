@@ -12,7 +12,7 @@ const Post = ({ post, handleEdit, handleDelete }) => {
 	const router = useRouter()
 
 	return (
-		<div className="prompt-card">
+		<div className="post-card">
 			<div className="post-creator">
 				<Image src={post.creator.image} alt="Foto Perfil" width={40} height={40} className="rounded-profile-photo" />
 				<div className="post-creator-info">
@@ -30,7 +30,7 @@ const Post = ({ post, handleEdit, handleDelete }) => {
 				</p>
 			</div>
 			<div className="post-actions">
-				{session?.user.id === post.creator._id && pathName === "/profile" ? 
+				{session?.user.id === post.creator._id && pathName === "/" ? 
 				(
 					<div> 
 						<p className="edit-post" onClick={handleEdit}>
