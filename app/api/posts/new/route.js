@@ -16,7 +16,6 @@ export const POST = async (request) => {
         return new Response(JSON.stringify(newPost), { status: 201 })
 
     } catch (error) {
-        console.log(error)
         return new Response(`Falhar ao criar o Post, ${error}`, { status: 500 })
     }
 } 
