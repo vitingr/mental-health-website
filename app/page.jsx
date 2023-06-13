@@ -6,20 +6,6 @@ import { useState, useEffect } from 'react'
 
 export default function Home() {
 
-	const [posts, setPosts] = useState([])
-
-	const fetchPosts = async () => {
-		const response = await fetch("/api/posts")
-		const data = await response.json()
-
-		setPosts(data)
-	}
-
-	useEffect(() => {
-		console.log("A")
-		fetchPosts()
-	}, [])
-
   return (
     <main>
 
@@ -76,7 +62,7 @@ export default function Home() {
 
         <section className="bg-main">
           <div className="flex-div">
-            <Feed postsData={posts} />
+            <Feed />
           </div>
         </section>
       </div>
