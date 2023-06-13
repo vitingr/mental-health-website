@@ -53,31 +53,31 @@ const page = () => {
       if (points >= 200 && points <= 250) {
         setResult("Sua saúde mental está estável, porém ainda sim é recomendado a terapia.")
         setText("Ao contrário do que se pode pensar, a terapia é recomendada para qualquer pessoa que deseja melhorar aspectos emocionais em sua vida e não somente para quem tem algum tipo de transtorno mental. O terapeuta tem a função de auxiliar o paciente na busca por respostas, fazendo-o entender o porquê do surgimento de certos pensamentos e atitudes.")
-        setPhoto("/assets/images/result1.png")
+        setPhoto("/assets/images/result1.PNG")
       }
 
       if (points > 250 && points <= 350) {
         setResult("Gestalt-terapia")
         setText("A linha de trabalho da Gestalt-terapia enfatiza o autoconhecimento e o crescimento pessoal, focando no homem e em suas percepções do presente, como capacidade de se autogerir e regular.")
-        setPhoto("/assets/images/result2.png")
+        setPhoto("/assets/images/result2.PNG")
       }
 
       if (points > 350 && points <= 500) {
         setResult("Terapia Cognitiva-comportamental")
         setText("É um tratamento psicoterapêutico que se propõe a ajudar o paciente identificando nele padrões de pensamentos, crenças e hábitos disfuncionais que, por sua vez, têm influência negativa em seus comportamentos e suas emoções.")
-        setPhoto("/assets/images/result3.png")
+        setPhoto("/assets/images/result3.PNG")
       }
 
       if (points > 500 && points <= 750) {
         setResult("Tratamento de Psicanálise.")
         setText("Um dos maiores objetivos da Psicanálise é criar um vínculo entre terapeuta e paciente, a fim de compreender os processos reprimidos pelo subconsciente, que geram sintomas como a angústia ou a ansiedade. Todo esse acompanhamento é realizado por meio da interpretação das ações e pensamentos do indivíduo")
-        setPhoto("/assets/images/result4.png")
+        setPhoto("/assets/images/result4.PNG")
       }
 
       if (points > 850) {
         setResult("Procure o mais rápido possível, caso extremamente grave! 💀 ")
         setText("Sinto muito em informar... porém, atualmente você está apresentando um altíssimo grau de loucura e insanidade, procure um psiquiatra o mais rápido possível, caso contrário, a situação pode sair ainda mais do controle e causar danos irreversivéis para a sociedade.")
-        setPhoto("/assets/images/result5.png")
+        setPhoto("/assets/images/result5.PNG")
       }
 
       console.log(result)
