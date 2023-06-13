@@ -591,6 +591,15 @@ footer p {
 
 .result-message {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-quiz {
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .result-message h3 {

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { quiz } from '../../data.js'
+import Image from 'next/image.js'
 
 const page = () => {
 
@@ -11,11 +12,13 @@ const page = () => {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null)
   const [showResult, setShowResult] = useState(false)
   const [result, setResult] = useState("")
+  const [text, setText] = useState("")
+  const [photo, setPhoto] = useState("")
 
   const { questions } = quiz
   const { question, answers } = questions[activeQuestion]
 
-  const onAnswerSelected = ( answer, index ) => {
+  const onAnswerSelected = (answer, index) => {
     setChecked(true)
     setSelectedAnswerIndex(index)
 
@@ -48,23 +51,33 @@ const page = () => {
     } else {
 
       if (points >= 200 && points <= 250) {
-        setResult("Opcao 1")
+        setResult("Sua saúde mental está estável, porém ainda sim é recomendado a terapia.")
+        setText("Ao contrário do que se pode pensar, a terapia é recomendada para qualquer pessoa que deseja melhorar aspectos emocionais em sua vida e não somente para quem tem algum tipo de transtorno mental. O terapeuta tem a função de auxiliar o paciente na busca por respostas, fazendo-o entender o porquê do surgimento de certos pensamentos e atitudes.")
+        setPhoto("/assets/images/result1.png")
       }
 
       if (points > 250 && points <= 350) {
-        setResult("Opcao 2")
+        setResult("Gestalt-terapia")
+        setText("A linha de trabalho da Gestalt-terapia enfatiza o autoconhecimento e o crescimento pessoal, focando no homem e em suas percepções do presente, como capacidade de se autogerir e regular.")
+        setPhoto("/assets/images/result2.png")
       }
 
       if (points > 350 && points <= 500) {
-        setResult("Opcao 3")
+        setResult("Terapia Cognitiva-comportamental")
+        setText("É um tratamento psicoterapêutico que se propõe a ajudar o paciente identificando nele padrões de pensamentos, crenças e hábitos disfuncionais que, por sua vez, têm influência negativa em seus comportamentos e suas emoções.")
+        setPhoto("/assets/images/result3.png")
       }
 
       if (points > 500 && points <= 750) {
-        setResult("Opcao 4")
+        setResult("Tratamento de Psicanálise.")
+        setText("Um dos maiores objetivos da Psicanálise é criar um vínculo entre terapeuta e paciente, a fim de compreender os processos reprimidos pelo subconsciente, que geram sintomas como a angústia ou a ansiedade. Todo esse acompanhamento é realizado por meio da interpretação das ações e pensamentos do indivíduo")
+        setPhoto("/assets/images/result4.png")
       }
 
-      if (points > 750 && points <= 1000) {
-        setResult("Opcao 5")
+      if (points > 850) {
+        setResult("Procure o mais rápido possível, caso extremamente grave! 💀 ")
+        setText("Sinto muito em informar... porém, atualmente você está apresentando um altíssimo grau de loucura e insanidade, procure um psiquiatra o mais rápido possível, caso contrário, a situação pode sair ainda mais do controle e causar danos irreversivéis para a sociedade.")
+        setPhoto("/assets/images/result5.png")
       }
 
       console.log(result)
@@ -128,11 +141,12 @@ const page = () => {
                     Resultado
                   </h4>
                   <div className='result-message'>
+                    <Image src={photo} alt="photo-answer" width={250} height={250} className='photo-quiz' />
                     <h3>
                       {result}
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam praesentium illum. Molestiae, unde dicta aliquid consequuntur omnis quas similique veniam sed nisi saepe soluta dolor sapiente ad, quasi iste?
+                      {text}
                     </p>
                   </div>
                 </div>

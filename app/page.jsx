@@ -11,7 +11,7 @@ export default function Home() {
 
       <section className="home">
         <h1 className="title">Bem-Vindo ao Mental Help</h1>
-        <p className="subtitle">Nós iremos ajudamos você a conciliar sua saúde mental com a tecnologia de uma maneira eficiente.</p>
+        <p className="subtitle">Nós iremos ajudar você a conciliar sua saúde mental com a tecnologia de uma maneira eficiente.</p>
         <div>
           <Link href="/pages/help">
             <button className="cta">
