@@ -12,7 +12,9 @@ export default function Home() {
 		const response = await fetch("/api/posts")
 		const data = await response.json()
 
+    console.log(data)
 		setPosts(data)
+    console.log(posts)
 	}
 
 	useEffect(() => {
