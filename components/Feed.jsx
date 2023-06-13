@@ -28,6 +28,7 @@ const Feed = () => {
 		fetchPosts()
 	}, [])
 
+	console.log(`POSTS ${posts}`)
 	return (
 		<div className='feed'>
 			<h1>

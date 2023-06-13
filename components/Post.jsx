@@ -14,6 +14,8 @@ const Post = ({ post, handleEdit, handleDelete }) => {
 		router.push(`/pages/answer-post?id=${post}`)
 	}
 
+	console.log(post)
+
 	return (
 		<div className="post-card" key={post._id}>
 			<div className="post-creator">
