@@ -11,7 +11,7 @@
 }
 
 :root {
-    /*--font-color: #1c2a38; */ 
+    /*--font-color: #1c2a38; */
     --font-color: white;
     --color1: #6553a5;
     --color2: #925fa1;
@@ -24,6 +24,7 @@
 }
 
 /*-=-=-=-=- REUTILIZÁVEL-=-=-=-=-*/
+
 .bg {
     /*background: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?cs=srgb&dl=pexels-veeterzy-114979.jpg&fm=jpg);*/
     /*background: url(https://png.pngtree.com/thumb_back/fh260/background/20210929/pngtree-glassmorphism-wave-effect-abstract-background-image_908575.png); */
@@ -205,6 +206,10 @@ header {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*-=-=-=-=- NAVBAR-=-=-=-=-*/
 
 nav {
@@ -301,7 +306,7 @@ main {
     overflow: hidden;
     line-height: 0;
 }
-   
+
 .custom-shape-divider-bottom-1684278806 svg {
     position: relative;
     display: block;
@@ -644,6 +649,7 @@ footer p {
 }
 
 .post-card {
+    background: white;
     border-radius: 10px;
     padding: 25px;
     width: 450px;
@@ -715,6 +721,62 @@ footer p {
 .answer-post:hover {
     color: #2a8f60;
 }
+
+.cssbuttons-io-button {
+    margin-top: 50px;
+    cursor: pointer;
+    background: var(--color3);
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em var(--color3);
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em var(--color3);
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: var(--color3);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
 
 /*-=-=-=-=- FORMULÁRIOS -=-=-=-=-*/
 
