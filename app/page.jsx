@@ -14,7 +14,6 @@ export default function Home() {
 
     console.log(data)
 		setPosts(data)
-    console.log(posts)
 	}
 
 	useEffect(() => {
