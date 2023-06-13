@@ -141,7 +141,7 @@ const page = () => {
                     Resultado
                   </h4>
                   <div className='result-message'>
-                    <Image src={photo} alt="photo-answer" width={250} height={250} className='photo-quiz' />
+                    <img src={photo} alt="photo-answer" width={250} height={250} className='photo-quiz' />
                     <h3>
                       {result}
                     </h3>
